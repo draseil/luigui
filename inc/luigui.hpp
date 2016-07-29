@@ -5,7 +5,9 @@
 #include <GL/gl.h>
 #include "entity.hpp"
 
-int luiguiInit();
-void luiguiTerminate();
+namespace luigui {
+    int init();
+    void terminate();
+}
 
 #endif
