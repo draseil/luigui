@@ -1,7 +1,5 @@
 #include <iostream>
-#include <GL/glew.h>
-#include <GL/gl.h>
-#include "entity.hpp"
+#include <luigui.hpp>
 #include <GLFW/glfw3.h>
 
 constexpr int WIDTH = 640, HEIGHT = 480;
@@ -24,8 +22,7 @@ GLFWwindow *createWindow() {
 int main() {
     glfwInit();
     GLFWwindow *window = createWindow();
-    glewExperimental = GL_TRUE;
-    glewInit();
+    luiguiInit();
 
     Entity e({1, 2}, {3, 4});
 

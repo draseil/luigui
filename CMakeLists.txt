@@ -25,6 +25,8 @@ include_directories(${SRC_DIR})
 include_directories(${INC_DIR})
 
 set( SOURCES
+    ${INC_DIR}/luigui.hpp
+    ${SRC_DIR}/luigui.cpp
     ${INC_DIR}/entity.hpp
     ${SRC_DIR}/entity.cpp
     ${INC_DIR}/button.hpp
