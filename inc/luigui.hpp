@@ -6,5 +6,6 @@
 #include "entity.hpp"
 
 int luiguiInit();
+void luiguiTerminate();
 
 #endif
