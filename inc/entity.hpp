@@ -28,26 +28,28 @@ namespace luigui {
         void setSize(glm::vec2 size);
 
         /** \brief Get the position of the current entity
-         *  \returns the position of the current entity
+         *  \returns The position of the current entity
          */
         glm::vec2 getPosition();
 
         /** \brief Get the size of the current entity
-         *  \returns the size of the current entity
+         *  \returns The size of the current entity
          */
         glm::vec2 getSize();
 
-        /** \brief Constructs an entity object with a position and size of (0, 0)
+        /** \brief Constructs an entity object with a position and size of
+         *         (0, 0)
          */
         Entity();
 
-        /** \brief Constructs an entity object with a specified position and a size
-         *         of (0, 0)
+        /** \brief Constructs an entity object with a specified position and a
+         *         size of (0, 0)
          *  \param[in] position The position of the new entity object
          */
         Entity(glm::vec2 position);
 
-        /** \brief Constructs an entity object with a specified position and size
+        /** \brief Constructs an entity object with a specified position and
+         *         size
          *  \param[in] position The position of the new entity object
          *  \param[in] size The size of the new entity object
          */
