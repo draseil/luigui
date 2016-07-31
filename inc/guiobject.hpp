@@ -2,6 +2,7 @@
 #define GUIOBJECT
 
 #include <glm/glm.hpp>
+#include <array>
 
 namespace luigui {
     /** \brief A base class that contains basic attributes of any GUI object
@@ -19,6 +20,11 @@ namespace luigui {
         /** \brief The colour of the current GUI object
          */
         glm::vec3 m_colour;
+
+        /** \brief The set of vertices used by OpenGL to draw the current GUI
+         *         object
+         */
+        std::array<float, 20> m_vertices;
         
     public:
         /** \brief Set the position of the current GUI object
@@ -50,6 +56,14 @@ namespace luigui {
          *  \returns the colour of the current GUI object
          */
         glm::vec3 getColour();
+
+        /** \brief Get the set of vertices used by OpenGL to draw the current
+         *         GUI object
+         *  \returns The set of vertices used by OpenGL to draw the current GUI
+         *           object
+         */
+
+        std::array<float, 20> getVertices();
 
         /** \brief Constructs a GUI object object with a position and size of
          *         (0, 0)
