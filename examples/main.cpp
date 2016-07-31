@@ -24,7 +24,7 @@ int main() {
     GLFWwindow *window = createWindow();
     luigui::init();
 
-    luigui::Entity e({1, 2}, {3, 4});
+    luigui::GUIObject e({1, 2}, {3, 4});
 
     std::cout << e.getPosition().x << ", " << e.getPosition().y << std::endl
               << e.getSize().x     << ", " << e.getSize().y     << std::endl;

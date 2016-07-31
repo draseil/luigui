@@ -3,7 +3,7 @@
 
 #include <GL/glew.h>
 #include <GL/gl.h>
-#include "entity.hpp"
+#include "guiobject.hpp"
 
 namespace luigui {
     int init();
