@@ -29,19 +29,29 @@ int main() {
     luigui::GUIObject g;
     luigui::GUIObject h({7, 8}, {9, 10}, {11, 12, 13});
 
-    std::cout << e.getPosition().x << ", " << e.getPosition().y << std::endl
-              << e.getSize().x     << ", " << e.getSize().y     << std::endl;
+    for (auto i : e.getVertices()) {
+        std::cout << i << ", ";
+    }
 
-    std::cout << f.getPosition().x << ", " << f.getPosition().y << std::endl
-              << f.getSize().x     << ", " << f.getSize().y     << std::endl;
+    std::cout << std::endl;
 
-    std::cout << g.getPosition().x << ", " << g.getPosition().y << std::endl
-              << g.getSize().x     << ", " << g.getSize().y     << std::endl;
+    for (auto i : f.getVertices()) {
+        std::cout << i << ", ";
+    }
 
-    std::cout << h.getPosition().x << ", " << h.getPosition().y << std::endl
-              << h.getSize().x     << ", " << h.getSize().y     << std::endl
-              << h.getColour().r   << ", " << h.getColour().g   << ", "
-              << h.getColour().b << std::endl;
+    std::cout << std::endl;
+
+    for (auto i : g.getVertices()) {
+        std::cout << i << ", ";
+    }
+
+    std::cout << std::endl;
+
+    for (auto i : h.getVertices()) {
+        std::cout << i << ", ";
+    }
+
+    std::cout << std::endl;
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
