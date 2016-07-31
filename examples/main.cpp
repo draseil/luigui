@@ -25,13 +25,9 @@ int main() {
     luigui::init();
 
     luigui::Entity e({1, 2}, {3, 4});
-    luigui::Entity f({5, 6});
 
     std::cout << e.getPosition().x << ", " << e.getPosition().y << std::endl
               << e.getSize().x     << ", " << e.getSize().y     << std::endl;
-
-    std::cout << f.getPosition().x << ", " << f.getPosition().y << std::endl
-              << f.getSize().x     << ", " << f.getSize().y     << std::endl;
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
