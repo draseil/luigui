@@ -16,6 +16,8 @@ namespace luigui {
          */
         glm::vec2 m_size;
 
+        /** \brief The colour of the current GUI object
+         */
         glm::vec3 m_colour;
         
     public:
