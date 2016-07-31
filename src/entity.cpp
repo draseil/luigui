@@ -22,15 +22,10 @@ namespace luigui {
         m_size = {0, 0};
     }
 
-    Entity::Entity(glm::vec2 position) {
-        m_position = position;
-        m_size = {0, 0};
-    }
+    Entity::Entity(glm::vec2 position) : m_position(position), m_size({0, 0}) {}
 
-    Entity::Entity(glm::vec2 position, glm::vec2 size) {
-        m_position = position;
-        m_size = size;
-    }
+    Entity::Entity(glm::vec2 position, glm::vec2 size)
+      : m_position(position), m_size(size) {}
 
     Entity::~Entity() {}
 }
