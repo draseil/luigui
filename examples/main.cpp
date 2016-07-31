@@ -25,9 +25,23 @@ int main() {
     luigui::init();
 
     luigui::GUIObject e({1, 2}, {3, 4});
+    luigui::GUIObject f({5, 6});
+    luigui::GUIObject g;
+    luigui::GUIObject h({7, 8}, {9, 10}, {11, 12, 13});
 
     std::cout << e.getPosition().x << ", " << e.getPosition().y << std::endl
               << e.getSize().x     << ", " << e.getSize().y     << std::endl;
+
+    std::cout << f.getPosition().x << ", " << f.getPosition().y << std::endl
+              << f.getSize().x     << ", " << f.getSize().y     << std::endl;
+
+    std::cout << g.getPosition().x << ", " << g.getPosition().y << std::endl
+              << g.getSize().x     << ", " << g.getSize().y     << std::endl;
+
+    std::cout << h.getPosition().x << ", " << h.getPosition().y << std::endl
+              << h.getSize().x     << ", " << h.getSize().y     << std::endl
+              << h.getColour().r   << ", " << h.getColour().g   << ", "
+              << h.getColour().b << std::endl;
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
