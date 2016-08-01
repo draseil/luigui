@@ -53,8 +53,10 @@ int main() {
 
     std::cout << std::endl;
 
+    glClear(GL_COLOR_BUFFER_BIT);
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
+        glfwSwapBuffers(window);
     }
 
     glfwTerminate();
