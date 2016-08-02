@@ -9,7 +9,7 @@ namespace luigui {
         "#version 150"
         "in vec2 position"
         "void main() {"
-            "gl_Position = position"
+            "gl_Position = vec4(position, 0.0, 0.1);"
         "}";
 
     std::string fragment_shader_source =
@@ -17,7 +17,7 @@ namespace luigui {
         "in vec3 in_colour"
         "out vec4 out_colour"
         "void main() {"
-            "out_colour = vec4(in_colour, 1.0)"
+            "out_colour = vec4(in_colour, 1.0);"
         "}";
 
     int init() {
