@@ -29,7 +29,6 @@ set( SOURCES
     ${SRC_DIR}/luigui.cpp
     ${INC_DIR}/guiobject.hpp
     ${SRC_DIR}/guiobject.cpp
-    ${INC_DIR}/button.hpp
 )
 
 find_package(OpenGL)
